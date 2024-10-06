@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Smart Inventory Management</title>
+</head>
+<body>
+    <h1>Dynamic Smart Inventory Management</h1>
+    
+    <h2>Problem:</h2>
+    <p>You are tasked with creating a more advanced inventory system for a fictional electronics store. This problem will challenge you to dynamically manage inventory using variables, loops, and conditionals, while handling JavaScript syntax, statements, comments, and variables effectively.</p>
+    
+    <h2>Instructions:</h2>
+    <ol>
+        <li>
+            <strong>Store Details:</strong>
+            <p>Declare three variables to store the following details:</p>
+            <ul>
+                <li><strong>storeName</strong> (string): The name of the store.</li>
+                <li><strong>storeLocation</strong> (string): The location of the store.</li>
+                <li><strong>storeCapacity</strong> (number): The maximum number of products the store can hold.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Dynamic Product Inventory:</strong>
+            <p>Create a variable products that stores an array of objects, representing products with:</p>
+            <ul>
+                <li><strong>name</strong> (string): Name of the product (e.g., Laptop, Smartphone).</li>
+                <li><strong>price</strong> (number): Price of the product.</li>
+                <li><strong>quantity</strong> (number): Quantity of the product in stock.</li>
+            </ul>
+            <p>Product 1: Laptop, Price: 18999, Quantity: 50</p>
+            <p>Product 2: Smartphone, Price: 9999, Quantity: 100</p>
+            <p>Product 3: Tablet, Price: 12999, Quantity: 80</p>
+        </li>
+        <li>
+            <strong>Inventory Validation:</strong>
+            <p>Write a function checkInventoryCapacity() to check if the total number of products exceeds the store's capacity. If it does, print a warning message.</p>
+        </li>
+        <li>
+            <strong>Product Manipulation (Add & Remove Products Dynamically):</strong>
+            <p>Write a function addProduct(productName, price, quantity) that adds a new product if there's space. Print a warning if it exceeds the capacity.</p>
+            <p>Write another function removeProduct(productName, quantity) that removes a specific quantity of a product. Print an error message if the quantity goes below 0.</p>
+        </li>
+        <li>
+            <strong>Most Expensive Product:</strong>
+            <p>Write a function getMostExpensiveProduct() to find and return the product with the highest price.</p>
+        </li>
+        <li>
+            <strong>Total Inventory Value:</strong>
+            <p>Write a function calculateTotalInventoryValue() that returns the total value of the inventory.</p>
+        </li>
+        <li>
+            <strong>User Interaction:</strong>
+            <p>Use prompt() to add and remove products from the inventory dynamically, and then print the updated inventory value.</p>
+        </li>
+        <li>
+            <strong>Comments:</strong>
+            <p>Add comments to explain different parts of your code, especially where conditionals and loops are used.</p>
+        </li>
+    </ol>
+
+    <h2>Output:</h2>
+    <p>Store Name: Tech Haven</p>
+    <p>Store Location: Metro Manila</p>
+    <p>Total Number of Products: 230</p>
+    <p>Total Inventory Value: 3649700</p>
+    <p>Most Expensive Product: Laptop</p>
+    <p>Store is at full capacity, cannot add new products. Updated Laptop Quantity: 60</p>
+
+    <h2>Stretch Goal:</h2>
+    <p>Automatic Restocking: Write a function restockProduct(productName, threshold) that adds 20 units if a product falls below 10 units.</p>
+    <p>Handle product removal edge cases where more than available quantity is removed.</p>
+
+    <h2>Additional Constraints:</h2>
+    <ul>
+        <li>Use const and let appropriately.</li>
+        <li>Use loops (e.g., for, forEach) to iterate through products.</li>
+        <li>Use if, else for handling edge cases.</li>
+        <li>Use meaningful variable names and follow JavaScript conventions.</li>
+    </ul>
+
+    <script src="index.js"></script>
+</body>
+</html>
